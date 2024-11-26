@@ -1,0 +1,56 @@
+.grid-contenedor{
+    display: grid; 
+    grid-template-areas:"uno    dos dos   tres"
+                        "uno cinco siete cuatro"
+                        "uno   ocho seis  cuatro";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    padding: 30px;
+    border: 1px solid black;
+    gap: 10px;
+}
+.grid-contenedor div{
+    border: 1px solid black;
+    padding: 100px;
+    text-align: center;
+}
+h1{
+    color: black
+}
+div{
+    color: white;
+}
+        /*Posicionamiento por areas*/
+
+.uno{
+    grid-area: uno; 
+    background-color: green; 
+}
+.dos{
+    grid-area: dos; 
+    background-color: green;
+}
+.tres{
+    grid-area: tres; 
+    background-color: red;
+}
+.cuatro{
+    grid-area: cuatro; 
+    background-color: green;
+}
+.cinco{
+    grid-area: cinco; 
+    background-color: orange;
+}
+.seis{
+    grid-area: seis; 
+    background-color: orange;
+}
+.siete{
+    grid-area: siete;
+    background-color: red;
+}
+.ocho{
+    grid-area: ocho; 
+    background-color: red;
+}
